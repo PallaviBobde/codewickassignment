@@ -1,0 +1,368 @@
+
+@font-face { font-family: Now; src: url('now.regular.otf'); } 
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #282828;
+    color: white;
+    font-family: Now;
+    width: 100vw;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul li{
+    list-style: none;
+}
+.header .navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo svg{
+    width: 60px;
+    height: 60px;
+    margin-right: 5px;
+}
+.logotext{
+    color: #30FBEF;
+    font-family: Now;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 160%;
+}
+.menu{
+    position: absolute;
+    right: 0;
+    font-family: Now;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    padding: 1vw;
+}
+.menu ul li a:hover{
+    color: #30FBEF;
+}
+.in{
+    padding: 10vh 10vw;
+}
+.hero,.sec,.download{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+}
+.head{
+    font-family: Now;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    /* line-height: 160%; */
+    color: #30FBEF;
+    margin-bottom: 20px;
+}
+.sechead{
+    font-family: Now;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #30FBEF;
+    margin-bottom: 20px;
+}
+.dsechead{
+    font-family: Now;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #30FBEF;
+    margin-bottom: 10px;
+}
+.content{
+    font-family: Now;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 160%;
+   margin-bottom: 20px;
+}
+.btn{
+    width: fit-content;
+    padding: 15px;
+    background: #282828;
+box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.25), -3px -3px 8px rgba(75, 93, 104, 0.1);
+border-radius: 50px;
+margin: 5px;
+}
+.bx{
+    margin: 10vh 5vw;
+}
+
+.sec,.features,.testimonials,.download{
+    background: radial-gradient(38.2% 50% at 50% 50%, #2E3134 0%, #292B2E 100%);
+    border: 2px solid #272829;
+    box-shadow: inset 2px 2px 40px rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    padding: 10vh 5vw;
+}
+.features .rectangle{
+    padding: 5vw;
+    min-width: 25%;
+    margin-right: 5vw;
+    background: #212121;
+    box-shadow: 9px 9px 10px rgba(0, 0, 0, 0.25), -9px -9px 10px rgba(75, 93, 104, 0.1);
+    border-radius: 50px;
+}
+.features .container{
+    display: flex;
+    flex-direction: row;
+}
+.blue{
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.005em;
+    color: #30FBEF;
+}
+input{
+    padding: 20px;
+    width: 50%;
+    background: radial-gradient(38.2% 50% at 50% 50%, #2E3134 0%, #292B2E 100%);
+    border: 1px solid #272829;
+    box-shadow: inset 2px 2px 25px rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+}
+.imgs{
+    max-width: 300px;
+}
+.download{
+    position: relative;
+}
+.download .left{
+    max-width: 50%;
+}
+.phone{
+    max-width: 600px;
+    position: absolute;
+    top: -15%;
+    right: -15%;
+}
+.vector img{
+    max-width: 150px;
+}
+.dp{
+    width: 90px;
+}
+.testimonials .boxes,.subscribe,.try,.footer{
+    display: flex;
+    flex-direction: row;
+}
+.testimonials .boxes .box{
+    margin-right: 5vw;
+    padding: 4vw;
+    min-width: 350px;
+    background: #212121;
+    box-shadow: 9px 9px 10px rgba(0, 0, 0, 0.25), -9px -9px 10px rgba(75, 93, 104, 0.1);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.testimonials .boxes .box img{
+    margin-right: 20px;
+}
+.des{
+    color: #9C69E2;
+}
+
+hr{
+    height: 2px;
+   background: #9C69E2;
+   opacity: 0.2;
+   box-shadow: 0px -7px 0px rgba(255, 255, 255, 0.19);
+}
+.logoimg{
+    margin-right: 10px;
+}
+.footer{
+    justify-content: space-between;
+    font-size: 16px;
+    color: #30FBEF;
+    margin-top: 20px;
+}
+.footer .top{
+    margin-bottom: 20px;
+}
+.footer ul li{
+    margin-bottom: 10px;
+}
+.copyright{
+    margin-top: 50px;
+}
+.try,.subscribe{
+    justify-content: space-between;
+}
+.try .right,.subscribe .right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+input{
+    min-width: 400px;
+    position: relative;
+}
+.subscribe .right .btn{
+    position: absolute;
+    right: 15%;
+}
+.try .right .btn{
+    height: fit-content;
+}
+
+.footer img{
+    width: 30px;
+}
+.footer .icons{
+    display: flex;
+    flex-direction: row;
+}
+
+.msg{
+    position: fixed;
+    right: 20%;
+    bottom: 20%;
+}
+
+.download .btn,.hero .btn,.navbar .btn{
+    padding: 10px 30px;
+}
+.sec img{
+    margin-right: 20px;
+}
+
+.features .container .rectangle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.vector{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.assess{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+.dots,.arrows{
+    display: flex;
+    align-items: center;
+}
+.arrows div{
+    margin: 2px;
+    cursor: pointer;
+}
+.dots .active{
+    width: 10px;
+    height: 10px;
+    background-color: #F063B8;
+    border-radius: 50%;
+    margin: 2px;
+}
+.dots .inactive{
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 2px;
+}
+
+.hamburger{
+    color: #30FBEF;
+    margin: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: bold;
+    font-size: 20px;
+    display: none;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .imgs{
+        max-width: 200px;
+    }
+    .features .container .rectangle:not(:first-child) {
+        display: none;
+    }
+    .testimonials .boxes .box:not(:first-child){
+        display: none;
+    }
+}
+@media screen and (max-width: 900px) {
+    .hero,.sec,.download{
+        display: flex;
+        flex-direction: column;
+    }
+    .phone{
+        display: none;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footer .col ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    input{
+        min-width: 200px;
+    }
+}
+@media screen and (max-width: 820px) {
+    .menu ul{
+        flex-direction: column;
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .head{
+        font-size: 40px;
+    }
+    .subscribe,.try{
+        flex-direction: column;
+    }
+    input{
+        min-width:100% ;
+    }
+    .subscribe .right .btn{
+        right: 5%;
+    }
+}
